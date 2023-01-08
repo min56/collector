@@ -1,7 +1,25 @@
 package com.example.collecter.global.entity;
 
-import javax.persistence.MappedSuperclass;
-@MappedSuperclass
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
+import org.hibernate.annotations.GenericGenerator;
 
-public class BaseUUIDEntity {
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+import java.util.UUID;
+
+@NoArgsConstructor
+@SuperBuilder
+@Getter
+@MappedSuperclass
+public abstract class BaseUUIDEntity {
+
+    @Id
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @Column(columnDefinition = "BINARY(16)")
+    private UUID id;
 }
