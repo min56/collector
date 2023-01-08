@@ -1,13 +1,13 @@
-package com.example.collector;
+package com.example.collecter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CollectorApplication {
+public class CollecterApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CollectorApplication.class, args);
+		SpringApplication.run(CollecterApplication.class, args);
 	}
 
 }
