@@ -1,0 +1,17 @@
+Spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${USER_NAME}
+    password: ${PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+auth:
+  jwt:
+    secret: ${SECRET}
+    access_exp: ${ACCESS_EXP}
+    refresh_exp: ${REFRESH_EXP}
+    header: ${HEADER}
+    prefix: ${PREFIX}
