@@ -1,11 +1,11 @@
-package com.example.collecter
+package com.example.collector
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class CollecterApplication
+class CollectorApplication
 
 fun main(args: Array<String>) {
-	runApplication<CollecterApplication>(*args)
+	runApplication<CollectorApplication>(*args)
 }
